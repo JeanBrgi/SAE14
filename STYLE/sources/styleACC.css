@@ -11,6 +11,10 @@
     src: url(../fonts/KANIT/Kanit-Regular.ttf);
   }
 
+@font-face {
+    font-family: "kanit italic";
+    src: url(../fonts/KANIT/Kanit-BoldItalic.ttf);
+    }
 body {
     background-color: var(--violet1);
     font-family: "kanit regular";
@@ -48,4 +52,20 @@ header {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+main {
+    margin-top: 100px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5C5792;
+    border-radius: 10%;
+    opacity: 0.5;
+}
+main h1 {
+    color: var(--violet4);
+    font-family: "kanit italic";
+    padding: 2%;
+    opacity: 1;
 }
