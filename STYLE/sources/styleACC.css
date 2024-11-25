@@ -1,0 +1,22 @@
+:root {
+    --violet1: #211A44;
+    --violet2: #5C5792;
+    --violet3: #9F8DC3;
+    --violet4: #BE9CC7;
+    --violet5: #E3BAD5;
+}
+
+@font-face {
+    font-family: "kanit regular";
+    src: url(../fonts/KANIT/Kanit-Regular.ttf);
+  }
+
+body {
+    background-color: var(--violet1);
+    font-family: "kanit regular";
+}
+
+h1 {
+    color: var(--violet5);
+    text-align: center;
+}
