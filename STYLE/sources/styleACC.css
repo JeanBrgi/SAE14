@@ -15,8 +15,37 @@ body {
     background-color: var(--violet1);
     font-family: "kanit regular";
 }
-
+/*
 h1 {
     color: var(--violet5);
     text-align: center;
+}
+*/
+#menu {
+    color: var(--violet4)
+}
+#menu li {
+    list-style: none;
+    
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+#menu li:hover {
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(255, 196, 0),
+    0 0 0.2em rgb(255, 123, 0);
+    transition: 300ms;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
