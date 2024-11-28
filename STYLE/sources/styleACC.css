@@ -1,12 +1,30 @@
 /***************** Init *****************/
 
 :root {
-    --violet1: #211A44;
+    --violet1: #441a3d;
     --violet2: #5C5792;
     --violet3: #9F8DC3;
     --violet4: #BE9CC7;
     --violet5: #E3BAD5;
 }
+
+@keyframes border-rgbcolor {
+    0% {
+        border-color: rgb(231, 209, 6); /* Rouge */
+    }
+    33% {
+        border-color: rgb(123, 34, 207); /* Vert */
+    }
+    66% {
+        border-color: rgb(20, 80, 192); /* Bleu */
+    }
+    100% {
+        border-color: rgb(172, 36, 36); /* Retour au rouge */
+    }
+}
+
+
+
 
 @font-face {
     font-family: "kanit regular";
@@ -40,7 +58,7 @@ main {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #3f396b;
+    background-color: var(--violet4);
     border-radius: 50px;    
 }
 
@@ -50,10 +68,19 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+
 section img {
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
 }
+
+
+
+
+
+
+
 /***************** class ID *****************/
 
 #logo {
@@ -84,11 +111,24 @@ section img {
     gap: 10px;
 }
 
-#list section {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
+section.promo {
+    border: thick double black;
+    animation: border-rgbcolor 2s infinite; /* Animation sur la couleur de la bordure */
 }
+
+section {
+    border: 2px solid var(--violet5);
+}
+#list section {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 /***************** Interact *****************/
 
 
@@ -101,6 +141,14 @@ section img {
 }
 
 main:hover h1 {
-    transform: translateX(80%);
+    transform: translateX(40%);
     transition: 750ms;
 }
+
+
+
+
+
+
+
+
