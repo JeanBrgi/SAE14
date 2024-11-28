@@ -32,23 +32,28 @@ main h1 {
     font-family: "kanit italic";
     padding: 2%;
     opacity: 1;
+    transition: transform 500ms;
 }
 
 main {
     margin-top: 100px;
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #5C5792;
-    border-radius: 10%;
-    opacity: 0.5;
+    background-color: #3f396b;
+    border-radius: 50px;    
 }
+
 
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+section img {
+    margin-left: auto;
+    margin-right: auto;
+}
 /***************** class ID *****************/
 
 #logo {
@@ -69,6 +74,21 @@ header {
     color: var(--violet4)
 }
 
+.pc {
+    width: 350px;
+}
+
+#list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#list section {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
 /***************** Interact *****************/
 
 
@@ -78,4 +98,9 @@ header {
     0 0 1em rgb(255, 196, 0),
     0 0 0.2em rgb(255, 123, 0);
     transition: 300ms;
+}
+
+main:hover h1 {
+    transform: translateX(80%);
+    transition: 750ms;
 }
