@@ -127,7 +127,7 @@ section {
     border-radius: 10px;
 }
 
-#myVideo {
+#bckvideo {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -135,6 +135,14 @@ section {
     min-height: 100%;
     z-index: -1;
   }
+
+ #btn {
+    background: none;
+    border: 2px solid black;
+    border-radius: 50%;
+ }
+
+
 /***************** Interact *****************/
 
 
