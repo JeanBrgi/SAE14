@@ -10,16 +10,16 @@
 
 @keyframes border-rgbcolor {
     0% {
-        border-color: rgb(231, 209, 6); /* Rouge */
+        border-color: rgb(231, 209, 6);
     }
     33% {
-        border-color: rgb(123, 34, 207); /* Vert */
+        border-color: rgb(123, 34, 207);
     }
     66% {
-        border-color: rgb(20, 80, 192); /* Bleu */
+        border-color: rgb(20, 80, 192);
     }
     100% {
-        border-color: rgb(172, 36, 36); /* Retour au rouge */
+        border-color: rgb(172, 36, 36); 
     }
 }
 
@@ -41,7 +41,9 @@
 /***************** Glob *****************/
 
 body {
-    background-color: var(--violet1);
+    /*background-color: var(--violet1);*/
+
+    background-repeat: no-repeat;
     font-family: "kanit regular";
 }
 
@@ -58,8 +60,9 @@ main {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--violet4);
+    border: 2px solid black;
     border-radius: 50px;    
+
 }
 
 
@@ -74,11 +77,6 @@ section img {
     margin-right: auto;
     border-radius: 10px;
 }
-
-
-
-
-
 
 
 /***************** class ID *****************/
@@ -113,7 +111,7 @@ section img {
 
 section.promo {
     border: thick double black;
-    animation: border-rgbcolor 2s infinite; /* Animation sur la couleur de la bordure */
+    animation: border-rgbcolor 2s infinite;
 }
 
 section {
@@ -129,6 +127,14 @@ section {
     border-radius: 10px;
 }
 
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
 /***************** Interact *****************/
 
 
@@ -140,10 +146,6 @@ section {
     transition: 300ms;
 }
 
-main:hover h1 {
-    transform: translateX(40%);
-    transition: 750ms;
-}
 
 
 
