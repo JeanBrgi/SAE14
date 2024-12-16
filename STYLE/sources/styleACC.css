@@ -37,8 +37,6 @@
 /***************** Glob *****************/
 
 body {
-    /*background-color: var(--violet1);*/
-
     background-repeat: no-repeat;
     font-family: "kanit regular";
 }
@@ -78,8 +76,15 @@ section {
     margin: 10px;
     opacity: 0.8;
     transition: 500ms;
+
 }
 
+section li {
+    list-style: none;
+}
+section a {
+    text-decoration: none;
+}
 /***************** class ID *****************/
 
 #logo {
@@ -146,7 +151,10 @@ section.promo {
     bottom: 10px;
  }
 
+#icon {
 
+    width: 7.5%;
+}
 
 /***************** Interact *****************/
 
