@@ -1,0 +1,4 @@
+Opacité sur les sections ( pas d'opacité qaund la souris passe -> surcharge le visuel du site )
+vidéo de fond qui n'est pas fluide (-> rendu non-esthetique )
+Logo pas visible
+Titre "nos machines pas adéquate"

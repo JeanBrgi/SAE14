@@ -43,9 +43,9 @@ body {
 
 main h1 {
     font-family: "kanit italic";
-    padding: 2%;
-    opacity: 1;
-    transition: transform 500ms;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 main {
@@ -53,15 +53,10 @@ main {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-
     border-radius: 30px;   
-
 }
 
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+
 
 a .pc {
     margin-left: auto;
@@ -73,7 +68,7 @@ section {
     background-color: whitesmoke;
     border: 4px solid black;
     margin: 10px;
-    opacity: 0.8;
+    
     transition: 500ms;
     width: 350px;
 }
@@ -97,6 +92,18 @@ section a {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    display: block;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#backgroundimg {
+    background-color: rgba(48, 49, 49, 0.5);
+    border-radius: 100px;
+    
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #menu li {
@@ -222,6 +229,26 @@ section.promo {
 }
 .promo:hover .newprice {
     transform: scale(1.5);
+}
+
+.buttonheader {
+    font-family: "kanit italic";
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px
+}
+
+#h1move {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 /***************** Interact *****************/
 
