@@ -176,6 +176,30 @@ section.promo {
     margin-bottom: 2%;
 }
 
+.nomprix {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.price {
+    font-size: 22px;
+} 
+
+
+.promo {
+    position: relative;
+}
+
+.promo .top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    top: -40px;
+    right: -20px;
+}
 /***************** Interact *****************/
 
 
