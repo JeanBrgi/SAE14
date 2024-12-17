@@ -78,13 +78,20 @@ section {
     transition: 500ms;
 
 }
-
+section ul {
+    padding-left: 0;
+}
 section li {
     list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    color: black;
+    font-size: smaller;
 }
 section a {
     text-decoration: none;
 }
+
 /***************** class ID *****************/
 
 #logo {
@@ -153,7 +160,20 @@ section.promo {
 
 #icon {
 
-    width: 7.5%;
+    width: 30%;
+}
+
+.name {
+    font-size: larger;
+}
+
+.compo p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.compo {
+    margin-bottom: 2%;
 }
 
 /***************** Interact *****************/
