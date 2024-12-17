@@ -42,7 +42,6 @@ body {
 }
 
 main h1 {
-    color: var(--violet4);
     font-family: "kanit italic";
     padding: 2%;
     opacity: 1;
