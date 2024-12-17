@@ -186,6 +186,22 @@ section.promo {
     font-size: 22px;
 } 
 
+.promo .nomprix {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    
+}
+.promo .price {
+    text-decoration: line-through;
+    text-decoration-thickness: 3px; 
+    
+}
+.newprice {
+    font-size: 22px;
+    color: red;
+    transition: 500ms;
+}
 
 .promo {
     position: relative;
@@ -199,6 +215,14 @@ section.promo {
     height: 100px;
     top: -40px;
     right: -20px;
+    transition: 500ms;
+}
+
+.promo:hover .top-right {
+    transform: scale(1.5) rotate(360deg);
+}
+.promo:hover .newprice {
+    transform: scale(1.5);
 }
 /***************** Interact *****************/
 
