@@ -1,12 +1,5 @@
 /***************** Init *****************/
 
-:root {
-    --violet1: #441a3d;
-    --violet2: #5C5792;
-    --violet3: #9F8DC3;
-    --violet4: #BE9CC7;
-    --violet5: #E3BAD5;
-}
 
 @keyframes border-rgbcolor {
     0% {
@@ -33,33 +26,17 @@
     src: url(../fonts/KANIT/Kanit-BoldItalic.ttf);
     }
 
-
-/***************** Glob *****************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /***************** body *****************/
 
 body {
     background-repeat: no-repeat;
     font-family: "kanit regular";
+    margin: 0;
 }
 
 main {  
     margin-top: 100px;
-    width: 70%;
+    width: 1500px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px;   
@@ -199,7 +176,7 @@ section a { /*liens des produits*/
 
 /*********  Promo   *********/
 
-section.promo { /*section des produits en promo*/
+section.promo { /* section des produits en promo */
     border: solid black;
     animation: border-rgbcolor 2s infinite;
 }
@@ -257,6 +234,7 @@ section.promo { /*section des produits en promo*/
     grid-template-columns: 1fr 1fr 1fr;
     border-radius: 30px;
     height: 200px;
+    margin: 8px;
 }
 
 #logo {
@@ -281,25 +259,26 @@ section.promo { /*section des produits en promo*/
 
 
 /***************** Screen Adaptative *****************/
+
 @media (max-width: 1800px) {
-    #list { /*liste des produits*/
+    #list {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
 
+    main {
+        width: 1200px;
+    }
    
 }
+
 @media (max-width: 1160px) {
 
-    #list { /*liste des produits*/
+    #list {
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
-    }
-
-    body {
-        margin:0;
     }
 
     #h1move{
@@ -317,5 +296,12 @@ section.promo { /*section des produits en promo*/
         padding: 0;
         border-radius: 0;
     }
-}
 
+    main {
+        width: 50%; 
+    }
+
+    body {
+        min-width: 760px;
+    }
+}
