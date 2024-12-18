@@ -91,23 +91,6 @@ section a {
 
 /***************** class ID *****************/
 
-#logo {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    display: block;
-    position: relative;
-    margin-bottom: 50px;
-}
-
-#backgroundimg {
-    background-color: rgba(48, 49, 49, 0.5);
-    border-radius: 100px;
-    
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
 #menu li {
     list-style: none;
@@ -235,19 +218,6 @@ section.promo {
 
 
 
-.buttonheader {
-    font-family: "kanit italic";
-    color: white;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px
-}
 
 #h1move {
     background-color: white;
@@ -268,4 +238,35 @@ section.promo {
 }
 
 
-/*********************************************/
+/********************   HEADER   *******************/
+
+
+#backgroundheader {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 30px;
+    height: 200px;
+}
+
+#logo {
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.buttonheader {
+    font-family: "kanit italic";
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;    
+}
+
+
