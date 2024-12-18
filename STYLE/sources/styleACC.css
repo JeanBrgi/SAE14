@@ -193,7 +193,7 @@ section.promo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.05);
     border-radius: 15px;
 }
 
@@ -233,12 +233,7 @@ section.promo {
     transition: 500ms;
 }
 
-.promo:hover .top-right {
-    transform: scale(1.5) rotate(360deg);
-}
-.promo:hover .newprice {
-    transform: scale(1.5);
-}
+
 
 .buttonheader {
     font-family: "kanit italic";
@@ -265,6 +260,12 @@ section.promo {
 
 .onclic { filter: invert(1); }
 
-section:hover {
-    opacity: 1;
+.promo:hover .top-right {
+    transform: scale(1.5) rotate(360deg);
 }
+.promo:hover .newprice {
+    transform: scale(1.5);
+}
+
+
+/*********************************************/
