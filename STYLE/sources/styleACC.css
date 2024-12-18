@@ -36,12 +36,36 @@
 
 /***************** Glob *****************/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************** body *****************/
+
 body {
     background-repeat: no-repeat;
     font-family: "kanit regular";
 }
 
-main h1 {
+main {  
+    margin-top: 100px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;   
+}
+
+#h1move h1 {   /*entete "nos machines"*/ 
     font-family: "kanit italic";
     margin-left: auto;
     margin-right: auto;
@@ -50,17 +74,58 @@ main h1 {
     font-size: 40px;
 }
 
-main {
-    margin-top: 100px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 30px;   
+#list { /*liste des produits*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }
 
+#list section { /*section de la liste des produits*/
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
 
+#bckvideo { /*fond de la page*/
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
 
-a .pc {
+#btn {  /*bouton de pause du fond*/ 
+    background-color: black;
+    border-radius: 50%;
+    transition: 650ms;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: 10px;
+}
+
+#btn img {  /*bouton de pause du fond*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#h1move {   /* Fond de l'entete "nos machines" */
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 45px;
+}
+
+/***************** Section *****************/
+
+a .pc { 
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -75,83 +140,24 @@ section {
     transition: 500ms;
     width: 350px;
 }
+
 section ul {
     padding-left: 0;
 }
-section li {
+
+section li {    
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 3fr;
     color: black;
     font-size: smaller;
 }
-section a {
+
+section a { /*liens des produits*/
     text-decoration: none;
 }
 
-/***************** class ID *****************/
-
-
-#menu li {
-    list-style: none;
-    border-radius: 20px;
-    width: 100px;
-    text-align: center;
-}
-
-.pc {
-    width: 350px;
-}
-
-#list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-}
-
-section.promo {
-    border: solid black;
-    animation: border-rgbcolor 2s infinite;
-}
-
-#list section {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    justify-items: center;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-#bckvideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-  }
-
-#btn img {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#btn {
-    background-color: black;
-    border-radius: 50%;
-    transition: 650ms;
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    right: 10px;
-    bottom: 10px;
- }
-
 #icon {
-
     width: 30%;
     margin-left: 20px;
 }
@@ -172,6 +178,10 @@ section.promo {
     margin-bottom: 2%;
 }
 
+.price {
+    font-size: 22px;
+} 
+
 .nomprix {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -180,29 +190,30 @@ section.promo {
     border-radius: 15px;
 }
 
-.price {
-    font-size: 22px;
-} 
+.pc {
+    width: 350px;
+}
+
+/*********  Promo   *********/
+
+section.promo { /*section des produits en promo*/
+    border: solid black;
+    animation: border-rgbcolor 2s infinite;
+}
+
+.promo {
+    position: relative;
+}
 
 .promo .nomprix {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    
 }
+
 .promo .price {
     text-decoration: line-through;
     text-decoration-thickness: 3px; 
-    
-}
-.newprice {
-    font-size: 22px;
-    color: red;
-    transition: 500ms;
-}
-
-.promo {
-    position: relative;
 }
 
 .promo .top-right {
@@ -216,17 +227,15 @@ section.promo {
     transition: 500ms;
 }
 
-
-
-
-#h1move {
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin-bottom: 45px;
+.newprice {
+    font-size: 22px;
+    color: red;
+    transition: 500ms;
 }
-/***************** Interact *****************/
 
+/****************************/
+
+/***************** Interact *****************/
 
 .onclic { filter: invert(1); }
 
@@ -237,9 +246,7 @@ section.promo {
     transform: scale(1.5);
 }
 
-
-/********************   HEADER   *******************/
-
+/****************   HEADER   *****************/
 
 #backgroundheader {
     background-color: rgba(0, 0, 0, 0.5);
