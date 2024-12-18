@@ -121,6 +121,9 @@ main {
     border: 2px solid black;
     border-radius: 10px;
     margin-bottom: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /***************** Section *****************/
@@ -276,4 +279,37 @@ section.promo { /*section des produits en promo*/
     margin-top: 75px;    
 }
 
+
+/***************** Screen Adaptative *****************/
+@media (max-width: 1800px) {
+    #list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    body {
+        width: screen.width;
+    }
+}
+@media (max-width: 1160px) {
+
+    #list { /*liste des produits*/
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    section {
+        margin-top: 35px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #h1move{
+        width: 360px
+    }
+    body {
+        width: screen.width;
+    }
+}
 
