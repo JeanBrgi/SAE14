@@ -1,0 +1,161 @@
+/***************** Init *****************/
+
+
+@keyframes border-rgbcolor {
+    0% {
+        border-color: rgb(231, 209, 6);
+    }
+    33% {
+        border-color: rgb(123, 34, 207);
+    }
+    66% {
+        border-color: rgb(20, 80, 192);
+    }
+    100% {
+        border-color: rgb(172, 36, 36); 
+    }
+}
+
+@font-face {
+    font-family: "kanit regular";
+    src: url(../fonts/KANIT/Kanit-Regular.ttf);
+  }
+
+@font-face {
+    font-family: "kanit italic";
+    src: url(../fonts/KANIT/Kanit-BoldItalic.ttf);
+    }
+
+
+/***************** body *****************/
+
+body {
+    background-repeat: no-repeat;
+    font-family: "kanit regular";
+    margin: 0;
+}
+
+main {  
+    margin-top: 100px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;   
+}
+
+#h1move h1 {   /*entete "nos machines"*/ 
+    font-family: "kanit italic";
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+}
+
+#list { /*liste des produits*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#bckvideo { /*fond de la page*/
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#btn {  /*bouton de pause du fond*/ 
+    background-color: black;
+    border-radius: 50%;
+    transition: 650ms;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: 10px;
+}
+
+#btn img {  /*bouton de pause du fond*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bckmobil {
+    display: none;
+}
+
+.onclic { filter: invert(1); }
+
+.promo:hover .top-right {
+    transform: scale(1.5) rotate(360deg);
+}
+.promo:hover .newprice {
+    transform: scale(1.5);
+}
+
+#backgroundheader {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 30px;
+    height: 200px;
+    margin: 8px;
+}
+
+#logo {
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.buttonheader {
+    font-family: "kanit italic";
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;    
+}
+
+/**************************************************/
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+
+.parent .div2 {
+    background-color: seashell;
+    border-radius: 20px;
+    height: 700px;
+}
+
+.div1 img {
+    width: 700px;
+    border-radius: 20px;
+}
+
+div p {
+    font-size: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding: 20px;
+    padding-top: 70px;
+}

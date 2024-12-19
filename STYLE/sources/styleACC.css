@@ -335,6 +335,7 @@ section.promo { /* section des produits en promo */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
+    margin-bottom: 100px;
 }
     
 
@@ -358,6 +359,13 @@ section.promo { /* section des produits en promo */
     background-color: aliceblue;
 }
 
+
+.div2 p {
+    max-width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .div3 {
     grid-column: span 2 / span 2;
     grid-column-start: 2;
