@@ -1,29 +1,6 @@
 
 
 
-/*
-document.addEventListener('DOMContentLoaded', () => {
-    const dropdownBtn = document.querySelector('.div4 .dropdown-btn');
-    const dropdownContent = document.querySelector('.div4 .dropdown-content');
-    const arrow = document.querySelector('.div4 .arrow');
-    const div4 = document.querySelector('.div4');
-
-    dropdownBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        dropdownContent.classList.toggle('active');
-        arrow.classList.toggle('active');
-        const div4 = document.querySelector('.div4');
-    });
-
-    document.addEventListener('click', (e) => {
-        if (!dropdownBtn.contains(e.target)) {
-            dropdownContent.classList.remove('active');
-            arrow.classList.remove('active');
-            div4.classList.remove('open');
-        }
-    });
-});
-*/
 document.addEventListener('DOMContentLoaded', () => {
     const dropdownBtn = document.querySelector('.dropdown-btn');
     const dropdownContent = document.querySelector('.dropdown-content');
@@ -47,6 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     } else {
-        console.error('One or more elements not found');
+        console.error('erreur');
     }
 });
