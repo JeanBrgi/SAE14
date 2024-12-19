@@ -138,6 +138,7 @@ section li {
 
 section a { /*liens des produits*/
     text-decoration: none;
+    color: black;
 }
 
 #icon {

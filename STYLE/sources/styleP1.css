@@ -140,7 +140,7 @@ main {
     .div2 { grid-area: 1 / 2 / 2 / 3; }
 
 .parent .div2 {
-    background-color: seashell;
+    background-color: aliceblue;
     border-radius: 20px;
     height: 700px;
 }
@@ -165,7 +165,7 @@ div p {
 
 
 .div4 {
-    background-color: seashell;
+    background-color: aliceblue;
     border-radius: 20px;
 }
 
@@ -173,7 +173,7 @@ div p {
     margin-top: 45px;
 }
 .div3 {
-    background-color: seashell;
+    background-color: aliceblue;
     border-radius: 20px;
 }
 
@@ -189,10 +189,17 @@ div p {
     font-size: 45px;
 }
 
+.price {
+    color: black;
+    transition: 650ms;
+    padding-left: 75px;
+    font-size: 45px;
+}
+
 /**************** Mise en page DIV5 ******************/
 
 .div5 {
-    background-color: seashell;
+    background-color:aliceblue;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
