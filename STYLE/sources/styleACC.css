@@ -303,10 +303,15 @@ section.promo { /* section des produits en promo */
 
     body {
         min-width: 760px;
-        background-image: url("../pic/bckgroundmobil.jpg");
+        background-image: url("../pic/backgroundmobil2.webp");
+        background-attachment: fixed; /* Ajout de cette ligne */
     }
 
     #bckvideo {
+        display: none;
+    }
+
+    #btn {
         display: none;
     }
 }
