@@ -103,6 +103,9 @@ main {
     margin-right: auto;
 }
 
+#bckmobil {
+    display: none;
+}
 /***************** Section *****************/
 
 a .pc { 
@@ -295,6 +298,8 @@ section.promo { /* section des produits en promo */
         margin:0;
         padding: 0;
         border-radius: 0;
+        position: relative;
+
     }
 
     main {
@@ -303,8 +308,6 @@ section.promo { /* section des produits en promo */
 
     body {
         min-width: 760px;
-        background-image: url("../pic/backgroundmobil2.webp");
-        background-attachment: fixed; /* Ajout de cette ligne */
     }
 
     #bckvideo {
@@ -314,4 +317,12 @@ section.promo { /* section des produits en promo */
     #btn {
         display: none;
     }
+
+    #bckmobil {
+        display: inline;
+        z-index: -1;
+        position: fixed;
+    }
 }
+
+
