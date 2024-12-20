@@ -150,7 +150,7 @@ main {
     border-radius: 20px;
 }
 
-div p {
+.div2 p {
     font-size: 25px;
     display: block;
     margin-left: auto;
@@ -225,7 +225,6 @@ div p {
 .div4 {
     position: relative;
     z-index: 1000;
-    border-radius: 10px;
     transition: border-radius 0.3s ease;
 }
 
@@ -284,4 +283,28 @@ div p {
 
 .arrow.active {
     transform: rotate(180deg);
+}
+
+
+/**************** Mise en page DIV6 ******************/
+
+.div6 {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;    
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin-top: 15px;
+    font-size: 40px;
+    transition: 500ms;
+}
+
+.div6 img {
+    margin: 45px;
+    width: 50px;
+    height: 50px;
+}
+
+.div6:hover {
+    background-color: rgb(17, 230, 88);
 }
