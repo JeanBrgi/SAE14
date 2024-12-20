@@ -337,7 +337,6 @@ main {
     z-index: 2;
     transition: transform 1s ease;
     transform: translateX(0);
-  
   }
   
   .div6 > p {
@@ -345,7 +344,6 @@ main {
     z-index: 2;
     transition: transform 1s ease;
     transform: translateX(0);
-    
   }
 
   .div6:hover > img {
