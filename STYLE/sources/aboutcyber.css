@@ -254,3 +254,6 @@ footer a {
 #about li {
     list-style: url(../pic/icon/etoileliste.png);
 }
+.listnodeco {
+    list-style: none;
+}
