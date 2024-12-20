@@ -229,6 +229,9 @@ section.promo { /* section des produits en promo */
 .promo:hover .newprice {
     transform: scale(1.5);
 }
+#backgroundheader:hover #logo {
+    transform: perspective(500px) rotateY(360deg) scale(1.25);
+}
 
 /****************   HEADER   *****************/
 
@@ -246,7 +249,7 @@ section.promo { /* section des produits en promo */
     display: block;
     margin-left: auto;
     margin-right: auto;
-
+    transition: 750ms;
 }
 
 .buttonheader {
