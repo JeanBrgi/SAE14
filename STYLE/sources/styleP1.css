@@ -432,4 +432,10 @@ main {
     #btn {
         display: none;
     }
+
+    .dropdown-content.active {
+        display: block;
+        max-height: 1000px;
+        opacity: 1;
+    }
 }
