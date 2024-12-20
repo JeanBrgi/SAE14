@@ -26,7 +26,6 @@
     src: url(../fonts/KANIT/Kanit-BoldItalic.ttf);
     }
 
-
 /***************** body *****************/
 
 body {
@@ -296,7 +295,6 @@ main {
     border-radius: 20px;
     margin-top: 15px;
     font-size: 40px;
-    transition: 500ms;
 }
 
 .div6 img {
@@ -305,6 +303,55 @@ main {
     height: 50px;
 }
 
-.div6:hover {
-    background-color: rgb(17, 230, 88);
-}
+
+
+.div6 {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .div6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(35, 230, 35);
+    transition: width 1s ease;
+    z-index: 1;
+  }
+  
+  .div6:hover::before {
+    width: 100%;
+  }
+  
+  .div6 > * {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .div6 > img {
+    position: relative;
+    z-index: 2;
+    transition: transform 1s ease;
+    transform: translateX(0);
+  
+  }
+  
+  .div6 > p {
+    position: relative;
+    z-index: 2;
+    transition: transform 1s ease;
+    transform: translateX(0);
+    
+  }
+
+  .div6:hover > img {
+    transform: translateX(400px) scale(1.5);
+  }
+  
+  .div6:hover > p {
+    transform: translateX(-100px);
+  }
