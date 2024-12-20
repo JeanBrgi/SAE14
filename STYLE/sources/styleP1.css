@@ -159,6 +159,11 @@ main {
     padding-top: 70px;
 }
 
+.div2 h3 {
+    transition: 1s;
+    width: 200px;
+}
+
 /**************** Mise en page DIV3 et DIV4 ******************/
 
 
@@ -353,3 +358,11 @@ main {
   .div6:hover > p {
     transform: translateX(-100px);
   }
+
+/**************** Animations Générales ******************/
+
+.div2:hover h3 {
+    transform: translateX(400px) perspective(500px) rotateY(360deg) scale(1.25);
+    
+
+}
