@@ -8,6 +8,7 @@
     src: url(../fonts/KANIT/Kanit-BoldItalic.ttf);
     }
 
+    .onclic { filter: invert(1); }
 /***************** body *****************/
 
 body {
