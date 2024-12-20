@@ -141,7 +141,7 @@ section a { /*liens des produits*/
     color: black;
 }
 
-#icon {
+.icon {
     width: 30%;
     margin-left: 20px;
 }
