@@ -377,7 +377,6 @@ main {
     }
     #backgroundheader {
         min-width: 460px;
-
         margin:0;
         padding: 0;
         border-radius: 0;
@@ -391,7 +390,7 @@ main {
     #bckvideo {
         display: none;
     }
-    #bckmobil {
+    #bckmobil { /* permet de fixer le fond*/
         display: inline;
         z-index: -1;
         position: fixed;
@@ -430,11 +429,11 @@ main {
     }
 
     #btn {
-        display: none;
+        display: none; /* Cache le bouton de pause du fond */
     }
 
     .dropdown-content.active {
         max-height: 1000px;
-        -webkit-overflow-scrolling: touch;
+        -webkit-overflow-scrolling: touch; /* permet un rendu plus agréable sur un appareil iOS  */
     }
 }
